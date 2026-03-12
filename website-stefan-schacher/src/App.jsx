@@ -8,7 +8,12 @@ import Portrait from "./pages/Portrait";
 import Product from "./pages/Product";
 import Documentation from "./pages/Documentation";
 import ArtistSupport from "./pages/ArtistSupport";
+import Wedding from "./pages/Wedding";
+import Landscape from "./pages/Landscape";
+import Report from "./pages/Report";
 import Contact from "./pages/Contact";
+import Imprint from "./pages/Imprint";
+import DataPrivacy from "./pages/DataPrivacy";
 
 const router = createBrowserRouter([
   {
