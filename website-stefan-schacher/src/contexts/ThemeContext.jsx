@@ -9,7 +9,7 @@ export default function ThemeProvider({ children }) {
   });
 
   useEffect(() => {
-    document.documentElement.className = theme; // so reagieren meine Tailwind-Klassen wie dark:bg-gray-900 direkt, ohne dass ich extra etwas an den Komponenten ändern muss
+    document.documentElement.className = theme; // document.documentElement steuert mein html-Element an. // demnach hat jetzt meine komplette seite die klasse theme, also je nachdem "light" oder "dark"
     localStorage.setItem("theme", JSON.stringify(theme));
   }, [theme]);
 
