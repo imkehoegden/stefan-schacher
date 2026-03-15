@@ -1,13 +1,19 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Gallery from "../components/Gallery";
 import Carousel from "../components/Carousel";
+import ButtonArrowRight from "../components/ButtonArrowRight";
 
 export default function Home() {
+  const navigate = useNavigate();
+
   return (
     <main>
       <Carousel />
       <Gallery />
-      {/* <Gallery images={...}/> images sollte hier ein Array von bildpfaden sein oder objekten mit src und alt */}
+      <ButtonArrowRight onClick={() => navigate("/work")}>
+        Work
+      </ButtonArrowRight>
     </main>
   );
 }

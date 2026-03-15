@@ -57,7 +57,7 @@ export default function Header() {
               href="https://www.instagram.com/stefanschacher/"
               target="_blank"
               rel="noopener noreferrer"
-              className="transition-colors hover:text-red-500 text-gray-500"
+              className="transition-colors hover:text-red-500 text-gray-500 cursor-pointer"
             >
               INSTAGRAM
             </a>
@@ -66,13 +66,13 @@ export default function Header() {
         <div className="flex gap-4 text-black">
           <button
             onClick={toggleLanguage}
-            className="transition-colors hover:text-red-500 text-gray-500 tracking-widest font-light"
+            className="transition-colors hover:text-red-500 text-gray-500 tracking-widest font-light cursor-pointer"
           >
             {language === "de" ? "EN" : "DE"}
           </button>
           <button
             onClick={toggleTheme}
-            className="transition-colors hover:text-red-500 text-gray-500 tracking-widest font-light"
+            className="transition-colors hover:text-red-500 text-gray-500 tracking-widest font-light cursor-pointer"
           >
             {theme === "light" ? "DARK" : "LIGHT"}
           </button>
