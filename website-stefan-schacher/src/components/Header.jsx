@@ -10,7 +10,7 @@ export default function Header() {
 
   return (
     <div>
-      <nav className="flex items-center justify-between bg-gray-200 px-8 py-4 gap-8 tracking-widest font-light sticky top-0 backdrop-blur">
+      <nav className="flex items-center justify-between bg-gray-200 px-8 py-12 gap-8 tracking-widest font-light sticky top-0 backdrop-blur">
         {/* py-4 margin, px-8 padding, tracking-widest für letter spacing */}
         <div className="text-2xl text-black">
           <NavLink to="/">STEFAN SCHACHER</NavLink>
@@ -20,8 +20,8 @@ export default function Header() {
             <NavLink
               to="/about"
               className={({ isActive }) =>
-                `transition-colors hover:text-gray-500 ${
-                  isActive ? "text-black" : "text-gray-500"
+                `transition-colors hover:text-green-500 ${
+                  isActive ? "text-green-500" : "text-gray-500"
                 }`
               }
             >
@@ -32,8 +32,8 @@ export default function Header() {
             <NavLink
               to="/work"
               className={({ isActive }) =>
-                `transition-colors hover:text-gray-500 ${
-                  isActive ? "text-black" : "text-gray-500"
+                `transition-colors hover:text-green-500 ${
+                  isActive ? "text-green-500" : "text-gray-500"
                 }`
               }
             >
@@ -44,8 +44,8 @@ export default function Header() {
             <NavLink
               to="/contact"
               className={({ isActive }) =>
-                `transition-colors hover:text-gray-500 ${
-                  isActive ? "text-black" : "text-gray-500"
+                `transition-colors hover:text-green-500 ${
+                  isActive ? "text-green-500" : "text-gray-500"
                 }`
               }
             >
@@ -57,11 +57,7 @@ export default function Header() {
               href="https://www.instagram.com/stefanschacher/"
               target="_blank"
               rel="noopener noreferrer"
-              className={({ isActive }) =>
-                `transition-colors hover:text-gray-500 ${
-                  isActive ? "text-black" : "text-gray-500"
-                }`
-              }
+              className="transition-colors hover:text-green-500 text-gray-500"
             >
               INSTAGRAM
             </a>
@@ -70,13 +66,13 @@ export default function Header() {
         <div className="flex gap-4 text-black">
           <button
             onClick={toggleLanguage}
-            className="text-sm tracking-wide hover:text-gray-500"
+            className="transition-colors hover:text-green-500 text-gray-500 tracking-widest font-light"
           >
             {language === "de" ? "EN" : "DE"}
           </button>
           <button
             onClick={toggleTheme}
-            className="text-sm tracking-wide hover:text-gray-500"
+            className="transition-colors hover:text-green-500 text-gray-500 tracking-widest font-light"
           >
             {theme === "light" ? "DARK" : "LIGHT"}
           </button>
