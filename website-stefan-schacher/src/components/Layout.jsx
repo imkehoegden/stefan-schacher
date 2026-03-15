@@ -5,7 +5,7 @@ import Footer from "./Footer";
 
 export default function Layout() {
   return (
-    <div className="max-w-6xl mx-auto px-8 mt-30">
+    <div className="max-w-7xl mx-auto px-8 mt-20">
       {/* mt-30 = margin top  */}
       <Header />
       <main>
