@@ -6,18 +6,19 @@
       "journey": "Neugierig auf Neues, lebte ich zeitweise in Sydney, Oslo und Berlin und arbeitete sowohl in der Mechanik als auch in der Fotografie. Diese Erfahrungen führten dazu, dass ich mich auf die kreative Branche konzentrierte und in Agenturumgebungen Layoutproduktion und Bildbearbeitung erlernte. Die Fotografie wurde schnell meine Hauptleidenschaft und verband technische Expertise mit künstlerischem Ausdruck.",
       "training": "Um meine Fähigkeiten weiterzuentwickeln, absolvierte ich die B6 Fotografenklasse sowie die M17CreativeStudios GmbH in Nürnberg. Nach drei Jahren intensiven Studiums erlangte ich den Abschluss als Produkt- und Werbefotograf, spezialisiert auf hochwertige kommerzielle Bildsprache.",
       "current": "Seit 2015 bin ich in Leipzig ansässig, einem der dynamischsten Kreativzentren Deutschlands. Mit meiner Arbeit möchte ich Bilder schaffen, die visuell stark und inhaltlich überzeugend sind.",
-      "membership": [
-        "Dvf - Deutscher Verband für Fotografie e. V.",
-        "Centralverband Deutscher Berufsfotografen"
-      ],
       "contact": {
         "name": "Stefan Schacher",
         "phone": "+49 176 200 169 36",
         "email": "info@stefanschacher.de"
+      },
+      "studio": {
+        "street": "Gießerstraße 14",
+        "zipCode": "04229 Leipzig"
       }
     },
     "work": {
-      "product": [
+      "Portrait": [],
+      "Product": [
         {
           "title": "Chocolate in large packs",
           "text": "Für den US-Markt hatte ich die Gelegenheit, eindrucksvolle Produktfotografie für Bouchard Schokolade zu erstellen. Der Fokus lag auf klaren, hochwertigen Freistellern, die die reichen Texturen und glänzenden Oberflächen der Premium-Schokoladen hervorheben. Jedes Bild betont die luxuriöse Ausstrahlung des Produkts und sorgt dafür, dass es auf einem wettbewerbsintensiven Markt heraussticht. Ziel war es, Schokoladenliebhaber mit visuell ansprechender und appetitlicher Fotografie zu begeistern."
@@ -27,7 +28,8 @@
           "text": "Ich hatte das Vergnügen, mit Meier Kartonagen zusammenzuarbeiten und detaillierte Produktfotografie für ihre Verpackungslösungen zu erstellen. Der Fokus lag auf hochwertigen Freistellern, die die Präzision und Robustheit ihrer Kartonprodukte betonen. Jedes Bild wurde sorgfältig gestaltet, um die klaren Linien und das robuste Design der Verpackungen zu zeigen und die Qualitätsorientierung von Meier Kartonagen visuell überzeugend zu kommunizieren."
         }
       ],
-      "artistSupport": [
+      "Documentation": [],
+      "Artists": [
         {
           "title": "A visit to Adrian Mudder's studio",
           "text": "Adrian Mudder (*1986 in Delmenhorst) studierte von 2007 bis 2013 an der Hochschule für Bildende Künste Braunschweig bei Prof. Olav Christopher Jenssen und Prof. Friedemann von Stockhausen. Anschließend absolvierte er dort die Meisterklasse bei Prof. Olav Christopher Jenssen. Adrian Mudder lebt und arbeitet in Leipzig."
@@ -41,7 +43,8 @@
           "text": "Nans Quetel ist eine französische Künstlerin, deren Arbeit zeitgenössische Ästhetik mit roher Emotionalität verbindet. Mit einem Hintergrund in der Bildenden Kunst ist ihr kreativer Ansatz tief in Storytelling, Textur und Form verwurzelt. Während dieses Sed Card Shootings spiegelte Nans Quetels Präsenz vor der Kamera die Tiefe ihres künstlerischen Ausdrucks wider – kühn und introspektiv zugleich. Jeder Rahmen reflektiert ihre Leidenschaft und macht sie zu einem fesselnden Subjekt jenseits der Leinwand."
         }
       ],
-      "landscape": [
+      "Wedding": [],
+      "Landscape": [
         {
           "title": "Stunning Landscapes of Georgia",
           "text": "Die atemberaubenden Landschaften Georgiens für einen Reiseblog festzuhalten, war ein unvergessliches Erlebnis. Von den mächtigen Kaukasusbergen über die üppigen Weinberge bis hin zu historischen Klöstern bot jede Szene eine einzigartige Geschichte. Die lebendigen Farben, dramatischen Himmel und vielfältigen Landschaften ermöglichen beeindruckende Fotografien, die die natürliche Schönheit Georgiens zeigen."
@@ -51,7 +54,7 @@
           "text": "Reportagefotografie fängt Momente des realen Lebens authentisch ein und erzählt Geschichten durch Bilder. Für die IHK Leipzig hebt diese Fotografie die Essenz von Events, Menschen und Orten hervor, vermittelt Emotionen und Erfahrungen. Jeder Shot schafft eine visuelle Erzählung, die beim Betrachter nachklingt."
         }
       ],
-      "report": [
+      "Report": [
         {
           "title": "Drangsal at Moritzbastei in Leipzig",
           "text": "Das Konzert von Drangsal in der Moritzbastei war ein unvergessliches Erlebnis. Die Menge war voller Aufregung, während die Band eine kraftvolle Performance mit Indie-Rock und elektronischen Elementen lieferte. Die intime Location verstärkte die Intensität und schuf eine elektrische Atmosphäre, die den Abend besonders machte."
@@ -90,18 +93,19 @@
       "journey": "Eager to explore beyond my technical training, I spent time living in Sydney, Oslo, and Berlin, working in both mechanics and photography. These experiences led me to shift my focus toward the creative industry, working in agency environments on layout production and image processing. Photography quickly became my primary passion, merging my technical expertise with artistic expression.",
       "training": "To further develop my skills, I completed professional training in the B6 photographer class and at M17CreativeStudios GmbH in Nuremberg. After three years of dedicated study, I earned my degree as a Product and Advertising Photographer, specializing in high-quality commercial imagery.",
       "current": "Since 2015, I have been based in Leipzig, one of Germany’s most dynamic creative hubs. Through my work, I aim to craft images that are both visually striking and conceptually strong.",
-      "membership": [
-        "Dvf - Deutscher Verband für Fotografie e. V.",
-        "Centralverband Deutscher Berufsfotografen"
-      ],
       "contact": {
         "name": "Stefan Schacher",
         "phone": "+49 176 200 169 36",
         "email": "info@stefanschacher.de"
+      },
+      "studio": {
+        "street": "Gießerstraße 14",
+        "zipCode": "04229 Leipzig"
       }
     },
     "work": {
-      "product": [
+      "Portrait": [],
+      "Product": [
         {
           "title": "Chocolate in large packs",
           "text": "For the U.S. market, I had the opportunity to create striking product photography for Bouchard chocolate. The focus was on clean, high-quality cut-out shots that highlight the rich textures and glossy finishes of their premium chocolates. Each image emphasizes the luxurious appeal of the product, ensuring it stands out in a competitive market. The goal was to captivate chocolate lovers with visually appealing and mouth-watering photography."
@@ -111,7 +115,8 @@
           "text": "I had the pleasure of working with Meier Kartonagen to create detailed product photography for their packaging solutions. The focus was on high-quality cut-out shots that emphasize the precision and durability of their cardboard products. Each image was carefully crafted to showcase the clean lines and robust design of their packaging, ensuring that Meier Kartonagen’s commitment to quality is visually communicated to their clients in a compelling way."
         }
       ],
-      "artistSupport": [
+      "Documentation": [],
+      "Artists": [
         {
           "title": "A visit to Adrian Mudder's studio",
           "text": "Adrian Mudder (*1986 in Delmenhorst) studied from 2007 to 2013 at the Braunschweig University of Fine Arts with Prof. Olav Christopher Jenssen and Prof. Friedemann von Stockhausen. He subsequently completed the master class with Prof. Olav Christopher Jenssen. Adrian Mudder lives and works in Leipzig."
@@ -125,7 +130,8 @@
           "text": "Nans Quetel is a French artist whose work merges contemporary aesthetics with raw emotion. With a background in fine arts, her creative approach is deeply rooted in storytelling, texture, and form. During this Sed Card shooting, Quetel’s unique presence in front of the camera mirrored the depth of her artistic expression—bold yet introspective. Each frame reflects her passion, making her a captivating subject beyond her canvas."
         }
       ],
-      "landscape": [
+      "Wedding": [],
+      "Landscape": [
         {
           "title": "Stunning Landscapes of Georgia",
           "text": "Capturing the breathtaking landscapes of Georgia for a travel blog was an unforgettable experience. From the towering Caucasus Mountains to the lush vineyards and historic monasteries, each scene offered a unique story. The vibrant colors, dramatic skies, and diverse terrain allowed for stunning photography, showcasing Georgia’s natural beauty."
@@ -135,7 +141,7 @@
           "text": "Reportage photography captures real-life moments with authenticity, telling compelling stories through images. For IHK Leipzig, this form of photography highlights the essence of events, people, and places, conveying emotions and experiences. Each shot aims to create a visual narrative that resonates with viewers."
         }
       ],
-      "report": [
+      "Report": [
         {
           "title": "Drangsal at Moritzbastei in Leipzig",
           "text": "Drangsal's concert at Moritzbastei was an unforgettable experience. The crowd was buzzing with excitement as the band delivered a powerful performance, blending indie rock with electronic elements. The intimate venue added to the intensity, creating an electric atmosphere that made the night truly special."

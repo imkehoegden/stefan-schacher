@@ -26,10 +26,12 @@ export default function About() {
 
   return (
     <main className="max-w-6xl mx-auto py-10 space-y-8">
+      <h1 className="text-2xl font-light mb-6 text-center">About</h1>
+
       <div className="h-180 overflow-hidden flex items-center justify-center">
         <img src={aboutPic} alt="Portraitfoto Stefan Schacher" />
       </div>
-      <h1 className="text-2xl font-light mb-6">About</h1>
+
       <div className="flex flex-col lg:flex-row gap-8">
         <div className="flex-1 space-y-6">
           <section>
@@ -54,20 +56,26 @@ export default function About() {
         </div>
 
         <aside className="w-full lg:w-1/3 space-y-6">
-          <section>
+          {/* <section>
             <h2 className="text-xl font-light mb-6">Memberships</h2>
             <ul className="list-disc ml-6 space-y-1">
               {about.membership.map((member, i) => (
                 <li key={i}>{member}</li>
               ))}
             </ul>
-          </section>
+          </section> */}
 
           <section>
             <h2 className="text-xl font-light mb-6">Contact</h2>
             <p>{about.contact.name}</p>
             <p>{about.contact.phone}</p>
             <p>{about.contact.email}</p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-light mb-6">Studio</h2>
+            <p>{about.studio.street}</p>
+            <p>{about.studio.zipCode}</p>
           </section>
         </aside>
       </div>
