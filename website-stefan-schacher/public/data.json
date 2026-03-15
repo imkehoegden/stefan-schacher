@@ -83,7 +83,8 @@
       "intro": "Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.",
       "usage": "Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (z.B. Name, Anschrift oder E-Mail-Adresse) erhoben werden, erfolgt dies soweit möglich stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.",
       "security": "Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.",
-      "studio": "Studio: Spinnereistraße 7, Haus 18, 04179 Leipzig"
+      "studio": "Studio: Gießerstraße 14, 04229 Leipzig",
+      "contact form / formspree": "Wenn Sie unser Kontaktformular nutzen, werden die von Ihnen eingegebenen Daten (zum Beispiel Name, E-Mail-Adresse und Nachricht) an unseren Dienstleister Formspree (https://formspree.io) übermittelt. Formspree verarbeitet diese Daten ausschließlich zur Bearbeitung Ihrer Anfrage. Dabei können zusätzlich technische Informationen wie Ihre IP-Adresse, der verwendete Browser (User-Agent) und die Referrer-URL protokolliert werden, um Spam zu verhindern und den Versand sicherzustellen. Mit dem Absenden des Formulars erklären Sie sich mit dieser Datenverarbeitung einverstanden. Die Daten werden nach Abschluss der Bearbeitung gelöscht, soweit keine gesetzliche Aufbewahrungspflicht besteht."
     }
   },
   "en": {
@@ -170,7 +171,8 @@
       "intro": "The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with statutory data protection regulations and this privacy policy.",
       "usage": "It is generally possible to use our website without providing personal data. If personal data (e.g., name, address, or e-mail addresses) is collected on our website, this is always done on a voluntary basis as far as possible. This data will not be passed on to third parties without your express consent.",
       "security": "We would like to point out that data transmission over the Internet (e.g., when communicating by e-mail) may be subject to security vulnerabilities. Complete protection of data against access by third parties is not possible.",
-      "studio": "Studio: Spinnereistraße 7, Haus 18, 04179 Leipzig"
+      "studio": "Studio: Gießerstraße 14, 04229 Leipzig",
+      "contact form / formspree": "When you use our contact form, the data you provide (e.g., name, email address, and message) is transmitted to our service provider Formspree (https://formspree.io). Formspree processes this data exclusively to handle your inquiry. Additionally, technical information such as your IP address, browser (User-Agent), and referrer URL may be logged to prevent spam and ensure proper delivery. By submitting the form, you consent to this data processing. The data will be deleted after your inquiry has been processed, unless legal retention requirements apply."
     }
   }
 }

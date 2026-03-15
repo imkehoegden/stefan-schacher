@@ -20,7 +20,7 @@ export default function Work() {
     getData();
   }, []);
 
-  if (!data) return <p>Die Inhalte dieser Seite werden gerade geladen.</p>;
+  if (!data) return;
 
   const categories = Object.keys(data[language].work); // Object.keys(obj) gibt einen Array aller Schlüssel eines Objekts zurück // hier also: ["Product", "Artist Support", "Landscape", "Report"] etc.
 

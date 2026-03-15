@@ -20,12 +20,12 @@ export default function About() {
     getTranslations();
   }, []);
 
-  if (!data) return <p>Die Inhalte dieser Seite werden gerade geladen.</p>;
+  if (!data) return; // return ohne p-tag oder dergleichen, sonst war text kurz beim laden sichtbar ...
 
   const about = data[language].about;
 
   return (
-    <main className="max-w-6xl mx-auto py-10 space-y-8">
+    <>
       <h1 className="text-2xl font-light mb-6 text-center">About</h1>
 
       <div className="h-180 overflow-hidden flex items-center justify-center">
@@ -79,6 +79,6 @@ export default function About() {
           </section>
         </aside>
       </div>
-    </main>
+    </>
   );
 }

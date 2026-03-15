@@ -8,10 +8,10 @@ export default function Home() {
   const navigate = useNavigate();
 
   return (
-    <main>
+    <>
       <Carousel />
       <Gallery />
       <Button onClick={() => navigate("/work")}>Work</Button>
-    </main>
+    </>
   );
 }
