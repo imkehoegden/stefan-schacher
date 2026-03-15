@@ -39,7 +39,7 @@ export default function Work() {
                 className="w-full h-full object-cover "
               />
               {/* Overlay bei Hover */}
-              <div className="absolute inset-0  bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <div className="absolute inset-0 bg-black/30 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
                 <span className="text-white text-xl font-light">{cat}</span>
               </div>
             </div>

@@ -32,7 +32,7 @@ export default function About() {
         <img src={aboutPic} alt="Portraitfoto Stefan Schacher" />
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-8">
+      <div className="flex flex-col lg:flex-row gap-12">
         <div className="flex-1 space-y-6">
           <section>
             <p className="leading-relaxed">{about.intro}</p>
@@ -55,7 +55,7 @@ export default function About() {
           </section>
         </div>
 
-        <aside className="w-full lg:w-1/3 space-y-6">
+        <aside className="w-full lg:w-1/5 space-y-6">
           {/* <section>
             <h2 className="text-xl font-light mb-6">Memberships</h2>
             <ul className="list-disc ml-6 space-y-1">
