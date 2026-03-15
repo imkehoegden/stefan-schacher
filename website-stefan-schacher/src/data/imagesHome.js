@@ -1,4 +1,4 @@
-import pic1 from "../assets/artist_adrian_2.jpg";
+import pic1 from "../assets/artist_adrian_4.jpg";
 import pic2 from "../assets/Landscape_01.jpg";
 import pic3 from "../assets/docu_demo.jpg";
 import pic4 from "../assets/Landscape_05.jpg";
