@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import Gallery from "../components/Gallery";
 import Carousel from "../components/Carousel";
-import ButtonArrowRight from "../components/ButtonArrowRight";
+import Button from "../components/Button";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -11,9 +11,7 @@ export default function Home() {
     <main>
       <Carousel />
       <Gallery />
-      <ButtonArrowRight onClick={() => navigate("/work")}>
-        Work
-      </ButtonArrowRight>
+      <Button onClick={() => navigate("/work")}>Work</Button>
     </main>
   );
 }
