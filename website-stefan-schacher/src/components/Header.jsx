@@ -9,11 +9,11 @@ export default function Header() {
   const { language, toggleLanguage } = useContext(LanguageContext);
 
   return (
-    <div className="max-w-5xl mx-auto">
+    <div>
       <nav className="flex items-center justify-between bg-gray-200 px-8 py-4 gap-8 tracking-widest font-light sticky top-0 backdrop-blur">
-        {/* // py-4 margin, px-8 padding tracking-widest für letter spacing */}
+        {/* py-4 margin, px-8 padding, tracking-widest für letter spacing */}
         <div className="text-2xl text-black">
-          <NavLink to="/">S T E F A N S C H A C H E R</NavLink>
+          <NavLink to="/">STEFAN SCHACHER</NavLink>
         </div>
         <ul className="flex justify-center items-center gap-6 ">
           <li>
