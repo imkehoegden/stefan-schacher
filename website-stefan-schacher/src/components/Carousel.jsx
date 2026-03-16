@@ -22,7 +22,7 @@ export default function Carousel({ pics, interval }) {
   } // gleiche logik wie oben // "teilungseffekt" bei modulo greift nur, wenn wert der länge erreicht oder überschritten wird
 
   return (
-    <div className="relative max-w-7xl mx-auto aspect-16/9 overflow-hidden flex items-center justify-center">
+    <div className="relative max-w-[1600px] mx-auto aspect-16/9 overflow-hidden flex items-center justify-center">
       {/* relativ anlegen für pfeile, h-160 ist leider nicht responsiv, daher  .aspect-16\/9 {aspect-ratio:16/9;} , overflow-hidden: pics können nicht über container hinausragen */}
       {pics.map((img, i) => (
         <img

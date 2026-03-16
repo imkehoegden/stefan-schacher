@@ -22,7 +22,7 @@ export default function Contact() {
       <form
         action="https://formspree.io/f/meine-form-id"
         method="POST"
-        className="flex flex-col gap-4 max-w-md mx-auto"
+        className="flex flex-col gap-4 max-w-[700px] mx-auto"
       >
         <input
           type="text"
