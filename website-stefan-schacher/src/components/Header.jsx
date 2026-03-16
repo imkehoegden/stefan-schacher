@@ -9,6 +9,11 @@ export default function Header() {
   const { theme, toggleTheme } = useContext(ThemeContext);
   const { language, toggleLanguage } = useContext(LanguageContext);
 
+  const themeDeEn = {
+    light: { de: "HELL", en: "LIGHT" },
+    dark: { de: "DUNKEL", en: "DARK" },
+  };
+
   return (
     <header>
       <nav className="flex items-center justify-between px-8 py-12 gap-8 tracking-widest font-light sticky top-0">
@@ -75,7 +80,8 @@ export default function Header() {
             onClick={toggleTheme}
             className="transition-colors hover:text-red-500 text-gray-500 tracking-widest font-light cursor-pointer"
           >
-            {theme === "light" ? "DARK" : "LIGHT"}
+            {/* {theme === "light" ? "DARK" : "LIGHT"} */}
+            {themeDeEn[theme][language]}
           </button>
         </div>
 
