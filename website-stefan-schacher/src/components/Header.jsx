@@ -26,7 +26,7 @@ export default function Header() {
                 }`
               }
             >
-              ABOUT
+              {language === "de" ? "ÜBER MICH" : "ABOUT"}
             </NavLink>
           </li>
           <li>
@@ -38,7 +38,7 @@ export default function Header() {
                 }`
               }
             >
-              WORK
+              {language === "de" ? "PORTFOLIO" : "WORK"}
             </NavLink>
           </li>
           <li>
@@ -50,7 +50,7 @@ export default function Header() {
                 }`
               }
             >
-              CONTACT
+              {language === "de" ? "KONTAKT" : "CONTACT"}
             </NavLink>
           </li>
           <li>
@@ -111,25 +111,25 @@ export default function Header() {
       {openMenu && (
         <nav className="md:hidden flex flex-col items-center gap-6 pb-6 transition-all duration-500 ease-in-out">
           <NavLink
-            to="/work"
-            className="text-gray-500 font-light tracking-widest"
-            onClick={() => setOpenMenu(false)}
-          >
-            WORK
-          </NavLink>
-          <NavLink
             to="/about"
             className="text-gray-500 font-light tracking-widest"
             onClick={() => setOpenMenu(false)}
           >
-            ABOUT
+            {language === "de" ? "ÜBER MICH" : "ABOUT"}
+          </NavLink>
+          <NavLink
+            to="/work"
+            className="text-gray-500 font-light tracking-widest"
+            onClick={() => setOpenMenu(false)}
+          >
+            {language === "de" ? "PORTFOLIO" : "WORK"}
           </NavLink>
           <NavLink
             to="/contact"
             className="text-gray-500 font-light tracking-widest"
             onClick={() => setOpenMenu(false)}
           >
-            CONTACT
+            {language === "de" ? "KONTAKT" : "CONTACT"}
           </NavLink>
 
           <div className="flex flex-col gap-4 mt-4">
