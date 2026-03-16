@@ -7,7 +7,7 @@ import Work from "./pages/Work";
 import Portrait from "./pages/Portrait";
 import Product from "./pages/Product";
 import Documentation from "./pages/Documentation";
-import ArtistSupport from "./pages/ArtistSupport";
+import Artists from "./pages/Artists";
 import Wedding from "./pages/Wedding";
 import Landscape from "./pages/Landscape";
 import Report from "./pages/Report";
@@ -33,7 +33,7 @@ const router = createBrowserRouter([
             element: <Product />,
           },
           { path: "documentation", element: <Documentation /> },
-          { path: "artist-support", element: <ArtistSupport /> },
+          { path: "artist-support", element: <Artists /> },
           { path: "wedding", element: <Wedding /> },
           { path: "landscape", element: <Landscape /> },
           { path: "report", element: <Report /> },

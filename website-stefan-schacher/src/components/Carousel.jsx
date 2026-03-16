@@ -40,14 +40,14 @@ export default function Carousel({ pics, interval }) {
 
       <button
         onClick={() => prevPicture()}
-        className="absolute top-1/2 left-3 transform -translate-y-1/2 text-white text-3xl bg-transparent"
+        className="absolute top-1/2 left-3 transform -translate-y-1/2 text-white text-3xl bg-transparent cursor-pointer"
       >
         {/* -translate-y-1/2: verschiebt den Button um 50 % seiner eigenen Höhe nach oben, sodass vertikal zentrierung */}
         &#8592;
       </button>
       <button
         onClick={() => nextPicture()}
-        className="absolute top-1/2 right-3 transform -translate-y-1/2 text-white text-3xl bg-transparent"
+        className="absolute top-1/2 right-3 transform -translate-y-1/2 text-white text-3xl bg-transparent cursor-pointer"
       >
         &#8594;
       </button>
