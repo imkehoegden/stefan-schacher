@@ -5,3 +5,39 @@ body,
 #root {
   height: 100%;
 }
+
+.light {
+  --bg: #ffffff;
+  --text: #000000;
+  --nav: #6b7280; /* gray-500 */
+  --hover: #ef4444; /* red-500 */
+  --logo: #000000;
+  --copyright: #6b7280;
+}
+
+.dark {
+  --bg: black;
+  --text: white;
+  --nav: white;
+  --hover: #ef4444;
+  --logo: white;
+  --copyright: white;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.nav-link {
+  color: var(--nav);
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: var(--hover);
+}
+
+.active-link {
+  color: var(--hover);
+}

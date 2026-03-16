@@ -10,15 +10,14 @@ export default function Header() {
   const { language, toggleLanguage } = useContext(LanguageContext);
 
   const themeDeEn = {
-    light: { de: "HELL", en: "LIGHT" },
-    dark: { de: "DUNKEL", en: "DARK" },
+    light: { de: "DUNKEL", en: "DARK" },
+    dark: { de: "HELL", en: "LIGHT" },
   };
 
   return (
     <header>
       <nav className="flex items-center justify-between px-8 pb-8 gap-8 tracking-widest font-light sticky top-0">
-        {/* py-4 margin, px-8 padding, tracking-widest für letter spacing */}
-        <div className="text-2xl text-black">
+        <div className="text-2xl" style={{ color: "var(--logo)" }}>
           <NavLink to="/">STEFAN SCHACHER</NavLink>
         </div>
         <ul className="hidden md:flex justify-center items-center gap-6 ">
@@ -26,8 +25,8 @@ export default function Header() {
             <NavLink
               to="/about"
               className={({ isActive }) =>
-                `transition-colors hover:text-red-500 ${
-                  isActive ? "text-red-500" : "text-gray-500"
+                `nav-link font-light tracking-widest transition-colors ${
+                  isActive ? "active-link" : ""
                 }`
               }
             >
@@ -38,8 +37,8 @@ export default function Header() {
             <NavLink
               to="/work"
               className={({ isActive }) =>
-                `transition-colors hover:text-red-500 ${
-                  isActive ? "text-red-500" : "text-gray-500"
+                `nav-link font-light tracking-widest transition-colors ${
+                  isActive ? "active-link" : ""
                 }`
               }
             >
@@ -50,8 +49,8 @@ export default function Header() {
             <NavLink
               to="/contact"
               className={({ isActive }) =>
-                `transition-colors hover:text-red-500 ${
-                  isActive ? "text-red-500" : "text-gray-500"
+                `nav-link font-light tracking-widest transition-colors ${
+                  isActive ? "active-link" : ""
                 }`
               }
             >
@@ -63,54 +62,49 @@ export default function Header() {
               href="https://www.instagram.com/stefanschacher/"
               target="_blank"
               rel="noopener noreferrer"
-              className="transition-colors hover:text-red-500 text-gray-500 cursor-pointer"
+              className="transition-colors nav-link cursor-pointer"
             >
               INSTAGRAM
             </a>
           </li>
         </ul>
-        <div className="hidden md:flex gap-4 text-black">
+
+        <div className="hidden md:flex gap-4">
           <button
             onClick={toggleLanguage}
-            className="transition-colors hover:text-red-500 text-gray-500 tracking-widest font-light cursor-pointer"
+            className="transition-colors nav-link tracking-widest font-light cursor-pointer"
           >
             {language === "de" ? "EN" : "DE"}
           </button>
           <button
             onClick={toggleTheme}
-            className="transition-colors hover:text-red-500 text-gray-500 tracking-widest font-light cursor-pointer"
+            className="transition-colors nav-link tracking-widest font-light cursor-pointer"
           >
-            {/* {theme === "light" ? "DARK" : "LIGHT"} */}
             {themeDeEn[theme][language]}
           </button>
         </div>
 
-        {/* <button
-          className="md:hidden flex flex-col gap-1"
-          onClick={() => setOpenMenu(!openMenu)}
-        >
-          <span className="w-6 h-0.5 bg-black"></span>
-          <span className="w-6 h-0.5 bg-black"></span>
-          <span className="w-6 h-0.5 bg-black"></span>
-        </button> */}
         <button
           className="md:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5"
           onClick={() => setOpenMenu(!openMenu)}
         >
           <span
-            className={`block w-8 h-0.5 bg-black transform transition duration-300 ease-in-out ${
+            className={`block w-8 h-0.5 transform transition duration-300 ease-in-out ${
               openMenu ? "rotate-45 translate-y-2" : ""
             }`}
+            style={{ backgroundColor: "var(--logo)" }}
           ></span>
           <span
-            className={`block w-8 h-0.5 bg-black transition-opacity duration-300 ease-in-out ${
+            className={`block w-8 h-0.5 transition-opacity duration-300 ease-in-out ${
               openMenu ? "opacity-0" : "opacity-100"
             }`}
+            style={{ backgroundColor: "var(--logo)" }}
           ></span>
           <span
-            className={`block w-8 h-0.5 bg-black transform transition duration-300 ease-in-out ${
+            className={`block w-8 h-0.5 transform transition duration-300 ease-in-out ${
               openMenu ? "-rotate-45 -translate-y-2" : ""
             }`}
+            style={{ backgroundColor: "var(--logo)" }}
           ></span>
         </button>
       </nav>
@@ -118,21 +112,21 @@ export default function Header() {
         <nav className="md:hidden flex flex-col items-center gap-6 pb-6 transition-all duration-500 ease-in-out">
           <NavLink
             to="/about"
-            className="text-gray-500 font-light tracking-widest"
+            className="nav-link font-light tracking-widest"
             onClick={() => setOpenMenu(false)}
           >
             {language === "de" ? "ÜBER MICH" : "ABOUT"}
           </NavLink>
           <NavLink
             to="/work"
-            className="text-gray-500 font-light tracking-widest"
+            className="nav-link font-light tracking-widest"
             onClick={() => setOpenMenu(false)}
           >
             {language === "de" ? "PORTFOLIO" : "WORK"}
           </NavLink>
           <NavLink
             to="/contact"
-            className="text-gray-500 font-light tracking-widest"
+            className="nav-link font-light tracking-widest"
             onClick={() => setOpenMenu(false)}
           >
             {language === "de" ? "KONTAKT" : "CONTACT"}
@@ -141,13 +135,13 @@ export default function Header() {
           <div className="flex flex-col gap-4 mt-4">
             <button
               onClick={toggleLanguage}
-              className="text-gray-500 font-light tracking-widest"
+              className="nav-link font-light tracking-widest"
             >
               {language === "de" ? "EN" : "DE"}
             </button>
             <button
               onClick={toggleTheme}
-              className="text-gray-500 font-light tracking-widest"
+              className="nav-link font-light tracking-widest"
             >
               {theme === "light" ? "DARK" : "LIGHT"}
             </button>

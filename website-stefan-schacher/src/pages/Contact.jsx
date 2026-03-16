@@ -50,7 +50,7 @@ export default function Contact() {
           type="submit"
           className="text-gray-500 px-4 py-2 hover:text-red-500 bg-transparent"
         >
-          {language === "de" ? "Absenden" : "Submit"}
+          {language === "de" ? "Absenden " : "Submit "}
           <span>&#8594;</span>
         </button>
       </form>

@@ -115,7 +115,16 @@
           "text": "I had the pleasure of working with Meier Kartonagen to create detailed product photography for their packaging solutions. The focus was on high-quality cut-out shots that emphasize the precision and durability of their cardboard products. Each image was carefully crafted to showcase the clean lines and robust design of their packaging, ensuring that Meier Kartonagen’s commitment to quality is visually communicated to their clients in a compelling way."
         }
       ],
-      "Documentation": [],
+      "Documentation": [
+        {
+          "title": "Drangsal at Moritzbastei in Leipzig",
+          "text": "Drangsal's concert at Moritzbastei was an unforgettable experience. The crowd was buzzing with excitement as the band delivered a powerful performance, blending indie rock with electronic elements. The intimate venue added to the intensity, creating an electric atmosphere that made the night truly special."
+        },
+        {
+          "title": "On the road with IHK",
+          "text": "Reportage photography captures real-life moments with authenticity, telling compelling stories through images. For IHK Leipzig, this form of photography highlights the essence of events, people, and places, conveying emotions and experiences. Each shot aims to create a visual narrative that resonates with viewers."
+        }
+      ],
       "Artists": [
         {
           "title": "A visit to Adrian Mudder's studio",
@@ -138,16 +147,6 @@
         },
         {
           "title": "In beautiful Brandenburg",
-          "text": "Reportage photography captures real-life moments with authenticity, telling compelling stories through images. For IHK Leipzig, this form of photography highlights the essence of events, people, and places, conveying emotions and experiences. Each shot aims to create a visual narrative that resonates with viewers."
-        }
-      ],
-      "Report": [
-        {
-          "title": "Drangsal at Moritzbastei in Leipzig",
-          "text": "Drangsal's concert at Moritzbastei was an unforgettable experience. The crowd was buzzing with excitement as the band delivered a powerful performance, blending indie rock with electronic elements. The intimate venue added to the intensity, creating an electric atmosphere that made the night truly special."
-        },
-        {
-          "title": "On the road with IHK",
           "text": "Reportage photography captures real-life moments with authenticity, telling compelling stories through images. For IHK Leipzig, this form of photography highlights the essence of events, people, and places, conveying emotions and experiences. Each shot aims to create a visual narrative that resonates with viewers."
         }
       ]
