@@ -35,7 +35,7 @@ export default function Work() {
           <Link
             key={i}
             to={`/work/${cat}`}
-            className="w-full sm:w-72 md:w-100 lg:w-118"
+            className="w-full sm:w-80 md:w-120 lg:w-190"
           >
             <div className="relative aspect-16/9 bg-gray-200 cursor-pointer flex items-center justify-center overflow-hidden">
               {/* Card Pic*/}

@@ -5,10 +5,10 @@ import Footer from "./Footer";
 
 export default function Layout() {
   return (
-    <div className="max-w-[1600px] mx-auto px-8 mt-20">
+    <div className="max-w-[1600px] mx-auto mt-20">
       {/* max-w-7xl flex flex-col min-h-screen */}
       <Header />
-      <main className="flex-1 min-h-[60vh] max-w-[1480px] mx-auto py-10 space-y-8">
+      <main className="min-h-[75vh] max-w-[1540px] mx-auto py-10 space-y-8">
         <Outlet />
       </main>
       <Footer />

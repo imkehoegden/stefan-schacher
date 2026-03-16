@@ -17,6 +17,12 @@ import fachtagWeltkulturerbe1 from "../assets/docu_fachtag_weltkulturerbe.jpg";
 import fachtagWeltkulturerbe2 from "../assets/docu_fachtag_weltkulturerbe_2.jpg";
 import htwk from "../assets/docu_htwk.jpg";
 import ihkZeugnisAusgabe from "../assets/docu_ihk_zeugnisausgabe.jpg";
+import konzertDrangsal1 from "../assets/report_konzert.webp";
+import konzertDrangsal2 from "../assets/report_konzert_2.webp";
+import konzertDrangsal3 from "../assets/report_konzert_3.webp";
+import irisAnsichten from "../assets/report_iris_ansichten.jpg";
+import fabrik from "../assets/report_fabrik.webp";
+import unternehmen from "../assets/report_unternehmen.webp";
 
 // Artist Support
 import artistMudder1 from "../assets/artist_adrian.jpg";
@@ -41,14 +47,6 @@ import landscapeGeorgia4 from "../assets/Landscape_04.jpg";
 import landscapeBrandenburg1 from "../assets/Landscape_05.jpg";
 import landscapeBrandenburg2 from "../assets/Landscape_06.jpg";
 
-// Report
-import konzertDrangsal1 from "../assets/report_konzert.webp";
-import konzertDrangsal2 from "../assets/report_konzert_2.webp";
-import konzertDrangsal3 from "../assets/report_konzert_3.webp";
-import irisAnsichten from "../assets/report_iris_ansichten.jpg";
-import fabrik from "../assets/report_fabrik.webp";
-import unternehmen from "../assets/report_unternehmen.webp";
-
 export const workImages = {
   Portrait: [portraitUlla1, portraitSolveig1, portraitArbel1],
   Product: [
@@ -65,6 +63,12 @@ export const workImages = {
     fachtagWeltkulturerbe2,
     htwk,
     ihkZeugnisAusgabe,
+    konzertDrangsal2,
+    konzertDrangsal1,
+    konzertDrangsal3,
+    irisAnsichten,
+    fabrik,
+    unternehmen,
   ],
   Artists: [
     artistShowAdrianBenjamin,
@@ -85,13 +89,5 @@ export const workImages = {
     landscapeGeorgia4,
     landscapeBrandenburg1,
     landscapeBrandenburg2,
-  ],
-  Report: [
-    konzertDrangsal2,
-    konzertDrangsal1,
-    konzertDrangsal3,
-    irisAnsichten,
-    fabrik,
-    unternehmen,
   ],
 };
