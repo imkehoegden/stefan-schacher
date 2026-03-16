@@ -28,7 +28,7 @@ export default function About() {
     <>
       <h1 className="text-2xl font-light mb-6 text-center">About</h1>
 
-      <div className="h-180 overflow-hidden flex items-center justify-center">
+      <div className="aspect-16/9 overflow-hidden flex items-center justify-center">
         <img src={aboutPic} alt="Portraitfoto Stefan Schacher" />
       </div>
 
