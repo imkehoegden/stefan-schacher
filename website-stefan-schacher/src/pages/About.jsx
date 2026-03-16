@@ -26,7 +26,9 @@ export default function About() {
 
   return (
     <>
-      <h1 className="text-2xl font-light mb-6 text-center">About</h1>
+      <h1 className="text-2xl font-light mb-6 text-center">
+        {language === "de" ? "Über mich" : "About"}
+      </h1>
 
       <div className="aspect-16/9 overflow-hidden flex items-center justify-center">
         <img src={aboutPic} alt="Portraitfoto Stefan Schacher" />
@@ -66,7 +68,9 @@ export default function About() {
           </section> */}
 
           <section>
-            <h2 className="text-xl font-light mb-6">Contact</h2>
+            <h2 className="text-xl font-light mb-6">
+              {language === "de" ? "Kontakt" : "Contact"}
+            </h2>
             <p>{about.contact.name}</p>
             <p>{about.contact.phone}</p>
             <p>{about.contact.email}</p>
