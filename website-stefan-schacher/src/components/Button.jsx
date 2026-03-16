@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ButtonArrowRight({ children, onClick }) {
+export default function Button({ children, onClick }) {
   return (
     <div className="flex justify-center">
       <button

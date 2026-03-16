@@ -1,32 +1,30 @@
 import React, { useState, useEffect } from "react";
-import { carouselImages } from "../data/imagesCarouselHome";
+// import { carouselImages } from "../data/imagesCarouselHome";
 
-export default function Carousel() {
+export default function Carousel({ pics, interval }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // slider mit autoplay
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % carouselImages.length); // ohne modulo der länge ist index über anzahl der bilder hinausgelaufen // sichert also, dass slider nicht endlos läuft!
-    }, 7000);
+      setCurrentIndex((prev) => (prev + 1) % pics.length); // ohne modulo der länge ist index über anzahl der bilder hinausgelaufen // sichert also, dass slider nicht endlos läuft!
+    }, interval);
     return () => clearInterval(intervalId);
   }, []); // startet beim mounten der komponente
 
   // slider-funktionen manuell vor und zurück (pfeile)
   function prevPicture() {
-    setCurrentIndex((prev) =>
-      prev === 0 ? carouselImages.length - 1 : prev - 1,
-    ); // prev value ist der aktuelle state // wenn currentIndex 0, wird das letzte bild des arrays aufgerufen, sonst das vorherige
+    setCurrentIndex((prev) => (prev === 0 ? pics.length - 1 : prev - 1)); // prev value ist der aktuelle state // wenn currentIndex 0, wird das letzte bild des arrays aufgerufen, sonst das vorherige
   }
 
   function nextPicture() {
-    setCurrentIndex((prev) => (prev + 1) % carouselImages.length);
+    setCurrentIndex((prev) => (prev + 1) % pics.length);
   } // gleiche logik wie oben // "teilungseffekt" bei modulo greift nur, wenn wert der länge erreicht oder überschritten wird
 
   return (
-    <div className="relative max-w-7xl h-160 mx-auto overflow-hidden flex items-center justify-center">
-      {/* relativ anlegen für pfeile, h-160 ist leider nicht responsiv, overflow-hidden: pics können nicht über container hinausragen */}
-      {carouselImages.map((img, i) => (
+    <div className="relative max-w-7xl mx-auto .aspect-[3/2] overflow-hidden flex items-center justify-center">
+      {/* relativ anlegen für pfeile, h-160 ist leider nicht responsiv, daher .aspect-[4/3], overflow-hidden: pics können nicht über container hinausragen */}
+      {pics.map((img, i) => (
         <img
           key={i}
           src={img}
