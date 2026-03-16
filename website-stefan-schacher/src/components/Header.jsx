@@ -109,24 +109,24 @@ export default function Header() {
         </button>
       </nav>
       {openMenu && (
-        <nav className="md:hidden flex flex-col items-center gap-6 pb-6">
+        <nav className="md:hidden flex flex-col items-center gap-6 pb-6 transition-all duration-500 ease-in-out">
           <NavLink
             to="/work"
-            className="text-gray-500 font-light"
+            className="text-gray-500 font-light tracking-widest"
             onClick={() => setOpenMenu(false)}
           >
             WORK
           </NavLink>
           <NavLink
             to="/about"
-            className="text-gray-500 font-light"
+            className="text-gray-500 font-light tracking-widest"
             onClick={() => setOpenMenu(false)}
           >
             ABOUT
           </NavLink>
           <NavLink
             to="/contact"
-            className="text-gray-500 font-light"
+            className="text-gray-500 font-light tracking-widest"
             onClick={() => setOpenMenu(false)}
           >
             CONTACT
@@ -135,13 +135,13 @@ export default function Header() {
           <div className="flex flex-col gap-4 mt-4">
             <button
               onClick={toggleLanguage}
-              className="text-gray-500 hover:text-red-500 font-light tracking-widest"
+              className="text-gray-500 font-light tracking-widest"
             >
               {language === "de" ? "EN" : "DE"}
             </button>
             <button
               onClick={toggleTheme}
-              className="text-gray-500 hover:text-red-500 font-light tracking-widest"
+              className="text-gray-500 font-light tracking-widest"
             >
               {theme === "light" ? "DARK" : "LIGHT"}
             </button>
