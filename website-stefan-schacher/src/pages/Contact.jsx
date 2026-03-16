@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { LanguageContext } from "../contexts/LanguageContext";
 
 // noch an Formspree anbinden // dort kostenfrei anmelden und neues formular erstellen und eine form-action-url erhalten
 
@@ -7,6 +8,15 @@ import React from "react";
 // auf EN und DE anbieten
 
 export default function Contact() {
+  const { language } = useContext(LanguageContext);
+
+  const placeholderDeEn = {
+    name: language === "de" ? "Name" : "Name",
+    email: language === "de" ? "E-Mail" : "Email",
+    msg: language === "de" ? "Nachricht" : "Message",
+    btn: language === "de" ? "Absenden →" : "Submit →",
+  };
+
   return (
     <>
       <form
@@ -17,20 +27,20 @@ export default function Contact() {
         <input
           type="text"
           name="name"
-          placeholder="Name"
+          placeholder={placeholderDeEn.name}
           required
           className="border px-3 py-2"
         />
         <input
           type="email"
           name="email"
-          placeholder="E-Mail"
+          placeholder={placeholderDeEn.email}
           required
           className="border px-3 py-2"
         />
         <textarea
           name="message"
-          placeholder="Nachricht"
+          placeholder={placeholderDeEn.msg}
           rows={7}
           required
           className="border px-3 py-2"
@@ -40,7 +50,8 @@ export default function Contact() {
           type="submit"
           className="text-gray-500 px-4 py-2 hover:text-red-500 bg-transparent"
         >
-          Absenden &#8594;
+          {language === "de" ? "Absenden" : "Submit"}
+          <span>&#8594;</span>
         </button>
       </form>
     </>
