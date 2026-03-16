@@ -16,7 +16,7 @@ export default function Header() {
 
   return (
     <header>
-      <nav className="flex  items-center justify-between px-8 py-12 gap-8 tracking-widest font-light sticky top-0">
+      <nav className="flex items-center justify-between px-8 py-12 gap-8 tracking-widest font-light sticky top-0">
         {/* py-4 margin, px-8 padding, tracking-widest für letter spacing */}
         <div className="text-2xl text-black">
           <NavLink to="/">STEFAN SCHACHER</NavLink>

@@ -8,7 +8,7 @@ export default function Layout() {
     <div className="max-w-7xl mx-auto px-8 mt-20">
       {/*  flex flex-col min-h-screen */}
       <Header />
-      <main className="flex-none max-w-6xl mx-auto py-10 space-y-8">
+      <main className="flex-1 min-h-[55vh] max-w-6xl mx-auto py-10 space-y-8">
         <Outlet />
       </main>
       <Footer />
