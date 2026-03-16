@@ -19,28 +19,28 @@ export default function Contact() {
           name="name"
           placeholder="Name"
           required
-          className="border px-3 py-2 rounded"
+          className="border px-3 py-2"
         />
         <input
           type="email"
           name="email"
           placeholder="E-Mail"
           required
-          className="border px-3 py-2 rounded"
+          className="border px-3 py-2"
         />
         <textarea
           name="message"
           placeholder="Nachricht"
-          rows={5}
+          rows={7}
           required
-          className="border px-3 py-2 rounded"
+          className="border px-3 py-2"
         />
-        {/* btn an design anpassen */}
+        {/* btn-komponente reinholen! */}
         <button
           type="submit"
-          className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+          className="text-gray-500 px-4 py-2 hover:text-red-500 bg-transparent"
         >
-          Absenden
+          Absenden &#8594;
         </button>
       </form>
     </>

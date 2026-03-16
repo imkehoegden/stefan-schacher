@@ -25,14 +25,18 @@ export default function Work() {
   const categories = Object.keys(data[language].work); // Object.keys(obj) gibt einen Array aller Schlüssel eines Objekts zurück // hier also: ["Product", "Artist Support", "Landscape", "Report"] etc.
 
   return (
-    <main className="max-w-6xl mx-auto py-10 space-y-8">
+    <>
       <h1 className="text-2xl font-light mb-6 text-center">Work</h1>
 
       <div className="flex flex-wrap justify-center gap-4">
         {categories.map((cat, i) => (
-          <Link key={i} to={`/work/${cat}`}>
-            <div className="relative w-142 h-95 group bg-gray-200 cursor-pointer flex items-center justify-center overflow-hidden">
-              {/* Card Pic */}
+          <Link
+            key={i}
+            to={`/work/${cat}`}
+            className="w-full sm:w-72 md:w-100 lg:w-118"
+          >
+            <div className="relative aspect-16/9 bg-gray-200 cursor-pointer flex items-center justify-center overflow-hidden">
+              {/* Card Pic*/}
               <img
                 src={workImages[cat][0]}
                 alt={cat}
@@ -46,6 +50,6 @@ export default function Work() {
           </Link>
         ))}
       </div>
-    </main>
+    </>
   );
 }
