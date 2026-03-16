@@ -26,7 +26,9 @@ export default function Work() {
 
   return (
     <>
-      <h1 className="text-2xl font-light mb-6 text-center">Work</h1>
+      <h1 className="text-2xl font-light mb-6 text-center">
+        {language === "de" ? "Portfolio" : "Work"}
+      </h1>
 
       <div className="flex flex-wrap justify-center gap-4">
         {categories.map((cat, i) => (
