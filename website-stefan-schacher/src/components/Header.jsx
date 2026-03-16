@@ -1,21 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useContext } from "react";
 import { ThemeContext } from "../contexts/ThemeContext";
 import { LanguageContext } from "../contexts/LanguageContext";
 
 export default function Header() {
+  const { openMenu, setOpenMenu } = useState(false);
   const { theme, toggleTheme } = useContext(ThemeContext);
   const { language, toggleLanguage } = useContext(LanguageContext);
 
   return (
-    <div>
-      <nav className="flex items-center justify-between px-8 py-12 gap-8 tracking-widest font-light sticky top-0 backdrop-blur">
+    <header>
+      <nav className="flex items-center justify-between px-8 py-12 gap-8 tracking-widest font-light sticky top-0">
         {/* py-4 margin, px-8 padding, tracking-widest für letter spacing */}
         <div className="text-2xl text-black">
           <NavLink to="/">STEFAN SCHACHER</NavLink>
         </div>
-        <ul className="flex justify-center items-center gap-6 ">
+        <ul className=".hidden md:flex justify-center items-center gap-6 ">
           <li>
             <NavLink
               to="/about"
@@ -77,8 +78,14 @@ export default function Header() {
             {theme === "light" ? "DARK" : "LIGHT"}
           </button>
         </div>
+        <button
+          className="md:hidden text-2xl"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          ☰
+        </button>
       </nav>
-    </div>
+    </header>
   );
 }
 
