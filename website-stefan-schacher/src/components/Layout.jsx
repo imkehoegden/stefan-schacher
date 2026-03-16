@@ -5,8 +5,7 @@ import Footer from "./Footer";
 
 export default function Layout() {
   return (
-    <div className="max-w-[1600px] mx-auto mt-20">
-      {/* max-w-7xl flex flex-col min-h-screen */}
+    <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 mt-12 sm:mt-16 lg:mt-20">
       <Header />
       <main className="min-h-[75vh] max-w-[1540px] mx-auto py-10 space-y-8 ">
         <Outlet />
