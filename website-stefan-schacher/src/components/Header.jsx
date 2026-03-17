@@ -131,6 +131,14 @@ export default function Header() {
           >
             {language === "de" ? "KONTAKT" : "CONTACT"}
           </NavLink>
+          <a
+            href="https://www.instagram.com/stefanschacher/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="nav-link font-light tracking-widest"
+          >
+            INSTAGRAM
+          </a>
 
           <div className="flex flex-col gap-4 mt-4">
             <button

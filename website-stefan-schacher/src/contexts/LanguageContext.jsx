@@ -12,14 +12,6 @@ export default function LanguageProvider({ children }) {
     localStorage.setItem("language", JSON.stringify(language));
   }, [language]);
 
-  // function toggleLanguage() {
-  //   if (language === "de") {
-  //     return setLanguage("en");
-  //   } else {
-  //     return setLanguage("de");
-  //   }
-  // }
-
   function toggleLanguage() {
     setLanguage((prev) => (prev === "de" ? "en" : "de"));
   }
