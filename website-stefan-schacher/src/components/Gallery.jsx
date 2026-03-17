@@ -1,11 +1,7 @@
 import React from "react";
 import { images } from "../data/imagesHome.js";
-// import Lightbox from "react-image-lightbox";
 
 export default function Gallery() {
-  // const [opened, setOpened] = useState(false);
-  // const [photoI, setPhotoI] = useState(0);
-
   return (
     <>
       <div className="columns-1 md:columns-2 lg:columns-3 gap-4 mt-4">
@@ -15,25 +11,9 @@ export default function Gallery() {
             src={img}
             alt={`Picture ${i + 1}`}
             className="w-full h-auto mb-4"
-            // onClick={() => {
-            //   setPhotoI(i);
-            //   setOpened(true);
-            // }}
           />
         ))}
       </div>
-      {/* {opened && (
-        <Lightbox
-          mainSrc={images[photoI]}
-          nextSrc={images[(photoI + 1) % images.length]}
-          prevSrc={images[(photoI + images.length - 1) % images.length]}
-          onCloseRequest={() => setOpened(false)}
-          onMovePrevRequest={() =>
-            setPhotoI((photoI + images.length - 1) % images.length)
-          }
-          onMoveNextRequest={() => setPhotoI((photoIndex + 1) % images.length)}
-        />
-      )} */}
     </>
   );
 }

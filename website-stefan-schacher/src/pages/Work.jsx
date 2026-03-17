@@ -22,7 +22,7 @@ export default function Work() {
 
   if (!data) return;
 
-  const categories = Object.keys(data[language].work); // Object.keys(obj) gibt einen Array aller Schlüssel eines Objekts zurück // hier also: ["Product", "Artist Support", "Landscape", "Report"] etc.
+  const categories = Object.keys(data[language].work); // Object.keys(obj) ist eine Methode, die einen Array aller Schlüssel eines Objekts zurückgibt // hier also: ["Product", "Artist Support", "Landscape", "Report"] etc.
 
   return (
     <>
@@ -34,7 +34,8 @@ export default function Work() {
         {categories.map((cat, i) => (
           <Link
             key={i}
-            to={`/work/${cat}`}
+            to={`/work/${cat.toLowerCase().replace(/\s+/g, "-")}`}
+            // to={`/work/${cat}`}
             className="w-full sm:w-80 md:w-120 lg:w-190"
           >
             <div className="relative aspect-16/9 bg-gray-200 cursor-pointer flex items-center justify-center overflow-hidden">

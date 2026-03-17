@@ -14,6 +14,7 @@ import Report from "./pages/Report";
 import Contact from "./pages/Contact";
 import Imprint from "./pages/Imprint";
 import DataPrivacy from "./pages/DataPrivacy";
+import WorkLayout from "./components/WorkLayout";
 
 const router = createBrowserRouter([
   {
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
       { path: "about", element: <About /> },
       {
         path: "work",
-        element: <Work />,
+        element: <WorkLayout />,
         children: [
           { index: true, element: <Work /> },
           { path: "portrait", element: <Portrait /> },
@@ -33,10 +34,9 @@ const router = createBrowserRouter([
             element: <Product />,
           },
           { path: "documentation", element: <Documentation /> },
-          { path: "artist-support", element: <Artists /> },
+          { path: "artists", element: <Artists /> },
           { path: "wedding", element: <Wedding /> },
           { path: "landscape", element: <Landscape /> },
-          { path: "report", element: <Report /> },
         ],
       },
       { path: "contact", element: <Contact /> },

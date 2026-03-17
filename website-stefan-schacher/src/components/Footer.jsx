@@ -16,7 +16,7 @@ export default function Footer() {
           {language === "de" ? "IMPRESSUM" : "IMPRINT"}
         </NavLink>
         <NavLink to="/data-privacy" className=" nav-link transition-colors">
-          {language === "en" ? "DATENSCHUTZ" : "DATA PRIVACY"}
+          {language === "de" ? "DATENSCHUTZ" : "DATA PRIVACY"}
         </NavLink>
       </div>
     </footer>

@@ -58,15 +58,6 @@ export default function About() {
         </div>
 
         <aside className="w-full lg:w-1/5 space-y-6">
-          {/* <section>
-            <h2 className="text-xl font-light mb-6">Memberships</h2>
-            <ul className="list-disc ml-6 space-y-1">
-              {about.membership.map((member, i) => (
-                <li key={i}>{member}</li>
-              ))}
-            </ul>
-          </section> */}
-
           <section>
             <h2 className="text-xl font-light mb-6">
               {language === "de" ? "Kontakt" : "Contact"}
