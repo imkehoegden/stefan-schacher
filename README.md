@@ -1,4 +1,4 @@
-# Website für Fotograf Stefan Schacher
+# Website für den Fotografen Stefan Schacher
 
 Eine moderne Portfolio-Website für den Leipziger Fotografen **Stefan Schacher**. Die Seite dient dazu, seine Arbeiten stilvoll zu präsentieren und potentiellen Kund:innen einen umfassenden Eindruck seiner fotografischen Arbeit zu vermitteln.
 
