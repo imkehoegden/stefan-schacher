@@ -27,7 +27,7 @@ export default function Work() {
   return (
     <>
       <h1 className="text-2xl font-light mb-6 text-center">
-        {language === "de" ? "Portfolio" : "Work"}
+        {language === "de" ? "PORTFOLIO" : "WORK"}
       </h1>
 
       <div className="flex flex-wrap justify-center gap-4">

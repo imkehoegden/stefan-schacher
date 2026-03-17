@@ -19,6 +19,10 @@ export default function Contact() {
 
   return (
     <>
+      <h1 className="text-2xl font-light mb-6 text-center">
+        {language === "de" ? "KONTAKT" : "CONTACT"}
+      </h1>
+
       <form
         action="https://formspree.io/f/meine-form-id"
         method="POST"

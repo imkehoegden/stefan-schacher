@@ -27,7 +27,7 @@ export default function About() {
   return (
     <>
       <h1 className="text-2xl font-light mb-6 text-center">
-        {language === "de" ? "Über mich" : "About"}
+        {language === "de" ? "ÜBER MICH" : "ABOUT"}
       </h1>
 
       <div className="aspect-16/9 overflow-hidden flex items-center justify-center">
@@ -36,31 +36,17 @@ export default function About() {
 
       <div className="flex flex-col lg:flex-row gap-12">
         <div className="flex-1 space-y-6">
-          <section>
-            <p className="leading-relaxed">{about.intro}</p>
-          </section>
-
-          <section>
-            <p className="leading-relaxed">{about.bio}</p>
-          </section>
-
-          <section>
-            <p className="leading-relaxed">{about.journey}</p>
-          </section>
-
-          <section>
-            <p className="leading-relaxed">{about.training}</p>
-          </section>
-
-          <section>
-            <p className="leading-relaxed">{about.current}</p>
-          </section>
+          <p className="leading-relaxed">{about.intro}</p>
+          <p className="leading-relaxed">{about.bio}</p>
+          <p className="leading-relaxed">{about.journey}</p>
+          <p className="leading-relaxed">{about.training}</p>
+          <p className="leading-relaxed">{about.current}</p>
         </div>
 
         <aside className="w-full lg:w-1/5 space-y-6">
           <section>
             <h2 className="text-xl font-light mb-6">
-              {language === "de" ? "Kontakt" : "Contact"}
+              {language === "de" ? "KONTAKT" : "CONTACT"}
             </h2>
             <p>{about.contact.name}</p>
             <p>{about.contact.phone}</p>
@@ -68,7 +54,7 @@ export default function About() {
           </section>
 
           <section>
-            <h2 className="text-xl font-light mb-6">Studio</h2>
+            <h2 className="text-xl font-light mb-6">STUDIO</h2>
             <p>{about.studio.street}</p>
             <p>{about.studio.zipCode}</p>
           </section>
