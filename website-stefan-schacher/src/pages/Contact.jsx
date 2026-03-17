@@ -24,7 +24,7 @@ export default function Contact() {
       </h1>
 
       <form
-        action="https://formspree.io/f/meine-form-id"
+        action="https://formspree.io/f/mnjgodbq"
         method="POST"
         className="flex flex-col gap-4 max-w-[700px] mx-auto"
       >
@@ -54,7 +54,7 @@ export default function Contact() {
           type="submit"
           className="text-gray-500 px-4 py-2 hover:text-red-500 bg-transparent"
         >
-          {language === "de" ? "Absenden " : "Submit "}
+          {language === "de" ? "ABSENDEN " : "SUBMIT "}
           <span>&#8594;</span>
         </button>
       </form>
