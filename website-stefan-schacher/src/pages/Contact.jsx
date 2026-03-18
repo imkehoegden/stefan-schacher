@@ -1,20 +1,25 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { LanguageContext } from "../contexts/LanguageContext";
 
-// noch an Formspree anbinden // dort kostenfrei anmelden und neues formular erstellen und eine form-action-url erhalten
+// an Formspree angebunden // dort kostenfrei angemeldet und neues formular erstellt und eine form-action-url erhalten
 
-// in Datenschutz erwähnen!
-
-// auf EN und DE anbieten
+// noch in Datenschutz erwähnen!
 
 export default function Contact() {
   const { language } = useContext(LanguageContext);
+  // const [submitted, setSubmitted] = useState(false); // brauche ich nicht. macht formspree von alleine
 
   const placeholderDeEn = {
     name: language === "de" ? "Name" : "Name",
     email: language === "de" ? "E-Mail" : "Email",
     msg: language === "de" ? "Nachricht" : "Message",
     btn: language === "de" ? "Absenden →" : "Submit →",
+  };
+
+  const handleSubmit = (e) => {
+    setSubmitted(true); // Standardverhalten beibehalten, denn Formspree kümmert sich ums Senden
+
+    setTimeout(() => setSubmitted(false), 3000); // blendet Meldung nach 3 Sekunden wieder aus
   };
 
   return (
@@ -26,7 +31,8 @@ export default function Contact() {
       <form
         action="https://formspree.io/f/mnjgodbq"
         method="POST"
-        className="flex flex-col gap-4 max-w-[700px] mx-auto"
+        className="flex flex-col gap-4 max-w-[700px] mx-auto "
+        onSubmit={handleSubmit}
       >
         <input
           type="text"
@@ -52,11 +58,20 @@ export default function Contact() {
         {/* btn-komponente reinholen! */}
         <button
           type="submit"
-          className="text-gray-500 px-4 py-2 hover:text-red-500 bg-transparent"
+          className="text-gray-500 px-4 py-2 hover:text-red-500 bg-transparent nav-link"
         >
           {language === "de" ? "ABSENDEN " : "SUBMIT "}
           <span>&#8594;</span>
         </button>
+
+        {/* {submitted && (
+          <div className="text-center mt-4 text-white font-medium">
+            {language === "de"
+              ? "Das Formular wurde erfolgreich abgesendet!"
+              : "The Form has been successfully submitted!"}
+          </div>
+        )} 
+         brauche ich hier nicht. macht formspree schon standardmäßig*/}
       </form>
     </>
   );
