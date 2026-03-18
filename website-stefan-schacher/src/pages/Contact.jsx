@@ -17,6 +17,8 @@ export default function Contact() {
   };
 
   const handleSubmit = (e) => {
+    // evtl. hier das formular fetchen, damit hier Inhalte per POST an Formspree, ohne Seite aber zu reloaden, gesendet werden
+
     setSubmitted(true); // Standardverhalten beibehalten, denn Formspree kümmert sich ums Senden
 
     setTimeout(() => setSubmitted(false), 3000); // blendet Meldung nach 3 Sekunden wieder aus
