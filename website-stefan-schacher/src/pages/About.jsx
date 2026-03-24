@@ -1,6 +1,10 @@
 import React, { useState, useEffect, useContext } from "react";
 import { LanguageContext } from "../contexts/LanguageContext";
 import aboutPic from "../assets/fotograf_stefan-schacher.jpg";
+import List from "../components/List";
+import { AboutSidebar } from "../components/AboutSidebar";
+import { AboutText } from "../components/AboutText";
+import HeroImage from "../components/HeroImage";
 
 export default function About() {
   const { language } = useContext(LanguageContext);
@@ -20,7 +24,7 @@ export default function About() {
     getTranslations();
   }, []);
 
-  if (!data) return; // return ohne p-tag oder dergleichen, sonst war text kurz beim laden sichtbar ...
+  if (!data) return; // return ohne p-tag oder dergleichen, denn sonst war text kurz beim laden sichtbar ...
 
   const about = data[language].about;
 
@@ -30,35 +34,20 @@ export default function About() {
         {language === "de" ? "ÜBER MICH" : "ABOUT"}
       </h1>
 
-      <div className="aspect-16/9 overflow-hidden flex items-center justify-center">
-        <img src={aboutPic} alt="Portraitfoto Stefan Schacher" />
-      </div>
+      <HeroImage src={aboutPic} alt="Portraitfoto Stefan Schacher" />
 
       <div className="flex flex-col lg:flex-row gap-12">
         <div className="flex-1 space-y-6">
-          <p className="leading-relaxed">{about.intro}</p>
-          <p className="leading-relaxed">{about.bio}</p>
-          <p className="leading-relaxed">{about.journey}</p>
-          <p className="leading-relaxed">{about.training}</p>
-          <p className="leading-relaxed">{about.current}</p>
+          <AboutText about={data[language].about} language={language} />
         </div>
+        <List
+          title={
+            language === "de" ? "KUND:INNEN (AUSWAHL)" : "SELECTED CLIENTS"
+          }
+          clients={data[language].about.clients}
+        />
 
-        <aside className="w-full lg:w-1/5 space-y-6">
-          <section>
-            <h2 className="text-xl font-light mb-6">
-              {language === "de" ? "KONTAKT" : "CONTACT"}
-            </h2>
-            <p>{about.contact.name}</p>
-            <p>{about.contact.phone}</p>
-            <p>{about.contact.email}</p>
-          </section>
-
-          <section>
-            <h2 className="text-xl font-light mb-6">STUDIO</h2>
-            <p>{about.studio.street}</p>
-            <p>{about.studio.zipCode}</p>
-          </section>
-        </aside>
+        <AboutSidebar about={data[language].about} language={language} />
       </div>
     </>
   );
